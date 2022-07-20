@@ -1,0 +1,160 @@
+.supp {
+	&__content {
+		padding-bottom: 120px;
+	}
+
+	&__title {
+		text-align: center;
+		margin-bottom: 60px;
+	}
+}
+
+.main-supp {
+	&__body {
+		display: flex;
+		margin: 0 -10px;
+		background: url(/img/06_support/d1.png) center no-repeat;
+		background-size: 120% 130%;
+		position: relative;
+		&:before {
+			content: "";
+			position: absolute;
+			background: url(/img/06_support/01.png) no-repeat;
+			background-size: 100% 100%;
+			height: 100%;
+			aspect-ratio: 1/1;
+			top: 50%;
+			left: 50%;
+			transform: translate(-90%, -50%);
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			background: url(/img/06_support/02.png) no-repeat;
+			background-size: 100% 100%;
+			height: 100%;
+			aspect-ratio: 1/1;
+			top: 50%;
+			right: 50%;
+			transform: translate(90%, -50%);
+		}
+	}
+
+	&__column {
+		flex: 0 0 50%;
+		padding: 0 10px;
+	}
+
+	&__item {
+		padding: 188px 0;
+	}
+}
+.item-supp {
+	text-align: center;
+	&__subtitle {
+		margin-bottom: 16px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.main-supp {
+		&__body {
+			&:before {
+				transform: translate(-95%, -50%);
+			}
+			&:after {
+				transform: translate(95%, -50%);
+			}
+		}
+
+		&__item {
+			padding: 140px 0;
+		}
+	}
+}
+@media (max-width: 867px) {
+	.main-supp {
+		&__item {
+			padding: 100px 0;
+		}
+	}
+}
+@media (max-width: 650px) {
+	.supp {
+		&__content {
+			position: relative;
+			&:before {
+				content: "";
+				position: absolute;
+				background: url(/img/06_support/d2.png) no-repeat;
+				background-size: 100% 100%;
+				width: 108%;
+				height: 80%;
+
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -48%);
+			}
+		}
+
+		&__title {
+			margin-bottom: 30px;
+		}
+	}
+
+	.main-supp {
+		&__body {
+			background: none;
+			flex-direction: column;
+			&:before {
+				content: "";
+				position: absolute;
+				background: url(/img/06_support/01.png) no-repeat;
+				background-size: 100% 100%;
+				width: 100%;
+				height: auto;
+				aspect-ratio: 1/1;
+
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -95%) rotate(90deg);
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				background: url(/img/06_support/02.png) no-repeat;
+				background-size: 100% 100%;
+				width: 100%;
+				height: auto;
+				aspect-ratio: 1/1;
+
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -5%) rotate(90deg);
+			}
+		}
+
+		&__item {
+			padding: 52.5px 0;
+		}
+	}
+}
+@media (max-width: 475px) {
+	.main-supp {
+		&__body {
+			&:before {
+				width: 90%;
+			}
+			&:after {
+				width: 90%;
+			}
+		}
+	}
+	.item-supp {
+		&__subtitle {
+			margin-bottom: 2px;
+			font-size: 40px;
+			letter-spacing: -0.04em;
+		}
+	}
+}

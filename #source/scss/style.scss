@@ -1,0 +1,33 @@
+//----RESET-STYLE
+@import "_reset.scss";
+
+//----FONTS
+@import "_fonts.scss";
+/*font-family: 'Inter', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
+//----VARIABLES
+@import "_vars.scss";
+
+//----GLOBAL
+@import "_global.scss";
+
+//---------------------------------------
+//----BANNER
+@import "_banner.scss";
+//----HEADER
+@import "_header.scss";
+
+//----MAIN
+@import "_home.scss"; //section-1
+@import "_metrics.scss"; //section-2
+@import "_stake.scss"; //section-3
+@import "_uty.scss"; //section-4
+@import "_support.scss"; //section-5
+@import "_buy.scss"; //section-6
+@import "_faq.scss"; //section-7
+//----/MAIN
+
+//----FOOTER
+@import "_footer.scss";
+//----BUTTONS/FORMS...

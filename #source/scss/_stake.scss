@@ -1,0 +1,178 @@
+.stake {
+	&__content {
+		background: url(/img/04_stake/d1.png) center no-repeat;
+	}
+
+	&__title {
+		margin-bottom: 8px;
+	}
+	&__subcontainer {
+		max-width: 1296px;
+		padding: 0 8px;
+		margin: 0 auto;
+		width: 100%;
+	}
+	&__subtitle {
+		font-weight: 600;
+		font-size: 100px;
+		line-height: 100%;
+		letter-spacing: -0.06em;
+		text-shadow: 0px 32px 64px rgba(255, 255, 255, 0.08);
+		//--
+		display: inline-block;
+		padding: 24px 48px;
+		margin-bottom: 50px;
+		background: linear-gradient(267.57deg, #fb4a4a 0%, #9b4cff 100%);
+		border-radius: 60px;
+		transform: rotate(-2deg);
+	}
+
+	&__text {
+		padding-right: 20px;
+		font-size: 48px;
+		line-height: 60px;
+		letter-spacing: -0.04em;
+		color: $grey36;
+		margin-bottom: 50px;
+		span {
+			color: $white;
+			font-weight: 500;
+		}
+	}
+
+	&__stat {
+		margin-left: 100px;
+	}
+}
+
+.stat-stake {
+	display: flex;
+	justify-content: center;
+	&__label {
+		font-weight: 100;
+		font-size: 120px;
+		line-height: 80px;
+		letter-spacing: 0.32em;
+		text-transform: uppercase;
+		color: $grey08;
+		writing-mode: vertical-rl;
+		text-align: center;
+		//--
+		transform: rotate(180deg);
+	}
+	&__items {
+		margin-left: 100px;
+	}
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 64px;
+		}
+	}
+}
+.item-stake {
+	display: flex;
+	align-items: center;
+	&__icon {
+		margin-right: 40px;
+		padding: 26px;
+		border-radius: 500px;
+
+		&--1 {
+			background: rgba(255, 104, 195, 0.16);
+		}
+		&--2 {
+			background: rgba(234, 104, 255, 0.16);
+		}
+		&--3 {
+			background: rgba(207, 104, 255, 0.16);
+		}
+	}
+
+	&__title {
+		margin-bottom: 12px;
+	}
+}
+
+@media (max-width: 867px) {
+	.stake {
+		&__text {
+			font-size: 32px;
+			line-height: 40px;
+		}
+		&__stat {
+			margin-left: 0px;
+		}
+		&__subtitle {
+			padding: 18px 36px;
+			font-size: 60px;
+		}
+	}
+	.stat-stake {
+		&__items {
+			margin-left: 30px;
+		}
+		&__label {
+			font-size: 80px;
+			line-height: 80px;
+		}
+	}
+}
+
+@media (max-width: 720px) {
+	.stat-stake {
+		flex-direction: column;
+		&__label {
+			writing-mode: horizontal-tb;
+			text-align: left;
+			margin-bottom: 32px;
+			transform: rotate(0);
+		}
+		&__items {
+			margin-left: 0px;
+		}
+	}
+} //--rotate "OVER" media
+
+@media (max-width: 475px) {
+	.stake {
+		&__content {
+			padding: 40px 0;
+		}
+		&__text {
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 28px;
+			letter-spacing: -0.02em;
+		}
+		&__subtitle {
+			padding: 12px 24px;
+			margin-bottom: 28px;
+			font-size: 40px;
+			letter-spacing: -0.05em;
+		}
+	}
+	.stat-stake {
+		&__item {
+			&:not(:last-child) {
+				margin-bottom: 32px;
+			}
+		}
+		&__label {
+			font-size: 64px;
+			line-height: 64px;
+		}
+	}
+	.item-stake {
+		&__icon {
+			margin-right: 16px;
+			padding: 15px;
+			img {
+				height: 28px;
+				width: 28px;
+			}
+		}
+		&__title {
+			margin-bottom: 2px;
+		}
+	}
+}
